@@ -1,0 +1,44 @@
+<!-- views/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Metadata Microservice</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Metadata Microservice</h1>
+    
+    <div class="section">
+      <h2>Upload a File</h2>
+      <form action="/api/fileanalyse" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <input type="file" name="upfile" id="upfile" required>
+        </div>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+    
+    <div class="section">
+      <h2>Example Output:</h2>
+      <pre><code>{
+  "name": "example.jpg",
+  "type": "image/jpeg",
+  "size": 12345
+}</code></pre>
+    </div>
+    
+    <div class="section">
+      <h2>API Documentation</h2>
+      <p>Send a POST request to <code>/api/fileanalyse</code> with a file in the "upfile" field.</p>
+      <p>The response will be a JSON object containing the file's name, type, and size in bytes.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+  </footer>
+</body>
+</html>
