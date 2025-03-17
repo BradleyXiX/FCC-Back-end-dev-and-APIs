@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Microservice | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Timestamp Microservice</h1>
+      <hr />
+      <div class="user-stories">
+        <h3>User Stories:</h3>
+        <ol>
+          <li>I can pass a string as a parameter, and it will check if that string contains either a valid Unix timestamp or a valid date string (e.g. "2016-12-25")</li>
+          <li>If it is valid, a JSON response will be returned with a <code>unix</code> key that is a Unix timestamp in milliseconds and a <code>utc</code> key that is a string of the input formatted as GMT date string</li>
+          <li>If the input is invalid, the API returns a JSON object with an <code>error</code> key and value <code>"Invalid Date"</code></li>
+          <li>If no date parameter is provided, the current time will be used</li>
+        </ol>
+      </div>
+      <h3>Example Usage:</h3>
+      <ul>
+        <li><a href="/api/2015-12-25">/api/2015-12-25</a></li>
+        <li><a href="/api/1451001600000">/api/1451001600000</a></li>
+        <li><a href="/api/">/api/</a> (current time)</li>
+      </ul>
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"unix":1451001600000,"utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+    </div>
+    <footer>
+      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+    </footer>
+  </body>
+</html>

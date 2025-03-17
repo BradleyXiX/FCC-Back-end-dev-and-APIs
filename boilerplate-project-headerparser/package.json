@@ -1,0 +1,30 @@
+{
+  "name": "request-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "FCC Backend Challenge - Request Header Parser Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/request-header-parser-microservice"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "fcc"
+  ],
+  "license": "MIT"
+}
